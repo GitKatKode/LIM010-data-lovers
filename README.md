@@ -9,7 +9,12 @@
 - [Introducción](#introducción)
 - [Resumen del proyecto](#resumen-del-proyecto)
 - [UX](#ux)
+- [Historia 1](#historia-1)
 - [Historia 2](#historia-2)
+- [Historia 3](#historia-3)
+- [Historia 4](#historia-4)
+- [Historia 5](#historia-5)
+- [Historia 6](#historia-6)
 - [Contenido de referencia](#contenido-de-referencia)
 
 ***
@@ -49,13 +54,25 @@ Para nuestro proyecto **Data Lovers** del Common Core, hemos optado por el tema 
    - *¿Cómo solucionamos los problemas/necesidades de los usuarios?*
     Brindaremos una interfaz que les permita  ingresar a través de un usuario y contraseña, pueda visualizar los pokemones de la región Kanto, al darle click a cada pokemón podrá visualizar sus principales características, que la interfaz también me permita conocer cuantos pokemones tengo atrapados,  además podrá ordenar la data de pokemones por nombre, por numero y frecuencia de aparición, el usuario podrá filtrar la data  por tipo y debilidades....
 
-## Historia 2
- - *Prototipo de Baja Calidad (mobile y desktop)_En Papel_*
+## Historia 1
+**_Como usuaria quiero poder loguearme para acceder al sitio web_**
+ Este fue realizado tal cual se nos planteó el modelo por parte de Laboratoria tanto para destop comoo para mobile.
   <p align="center">
-    <img src="src/img/papel.jpg">
+  <img src="src/img/PGOLoginD.PNG">
   </p>
 
+## Historia 2
+**_Como usuaria quiero poder ver a todos los pokemones al ingresar a la página para saber cuántos tengo y cuántos me faltan atrapar_**
+ - *Prototipo de Baja Calidad (mobile y desktop)En Papel*
+  <p align="center">
+    <img src="src/img/papel.jpg" width ="431" heigth = "877">
+  </p>
  -  *Feedback y mejoras*
+  Se mostraban los pokemones en la pantalla, pero sin ninguna base, por lo que se diseño un formato que le figure como base  y de esta manera no queden al aire. 
+  Cada pokemón muestra los nombres y si está atrapado o aúm no, además del total de atrapados y los que faltan por atrapar. 
+  <p align="center">
+    <img src="src/img/papelpoke0.jpg" width ="431" heigth = "877">
+  </p>
  - *Imagen y link del prototipo de alta fidelidad final (mobile y desktop) en
    Figma.*
   <p align="center">
@@ -68,6 +85,54 @@ Para nuestro proyecto **Data Lovers** del Common Core, hemos optado por el tema 
   <img src="src/img/CapturaM.PNG">
   </p>
 
+  ## Historia 3
+  **_Como usuaria quiero poder elegir un pokemon para ver sus características más relevantes_**
+ - *Prototipo de Baja Calidad (mobile y desktop)_En Papel_*
+  <p align="center">
+    <img src="src/img/papelpokecard.jpg"width ="431" heigth = "877">
+  </p>
+
+ -  *Feedback y mejoras*
+  
+  
+ - *Imagen y link del prototipo de alta fidelidad final (mobile y desktop) en
+   Figma.*
+  <p align="center">
+  </p>
+
+  ## Historia 4
+  **_Como usuaria quiero poder ordenar por orden alfabético (A-Z y Z-A) y frecuencia de aparición (spawn) de manera ascendente (menor a mayor) o descendente (mayor a menor) a los pokemones para poder ubicarlos fácilmente y saber cuáles son los más difíciles de atrapar_**
+ - *Prototipo de Baja Calidad (mobile y desktop)_En Papel_*
+  <p align="center">
+    <img src="src/img/papelPoke1.jpg" width ="431" heigth = "877">
+  </p>
+ -  *Feedback y mejoras*
+ - *Imagen y link del prototipo de alta fidelidad final (mobile y desktop) en Figma
+  <p align = "center">
+   <img src="src/img/CapturaD4.PNG" >
+   <br>
+   <img src="src/img/CapturaM4.PNG" width ="300" >
+</p>
+
+  ## Historia 5
+  **_Como usuaria quiero poder filtrar a los pokemones por tipo y debilidades para saber quiénes y cuántos son de cada tipo y tienen esa debilidad_**
+ - *Prototipo de Baja Calidad (mobile y desktop)_En Papel_*
+
+ -  *Feedback y mejoras*
+  
+ - *Imagen y link del prototipo de alta fidelidad final (mobile y desktop) en
+   Figma.*
+
+   ## Historia 6
+  **_Como usuaria quiero poder obtener el porcentaje de los pokemones que aparecen en los diferentes tipos de huevo para saber qué huevos eclosiona_**
+ - *Prototipo de Baja Calidad (mobile y desktop)_En Papel_*
+
+ -  *Feedback y mejoras*
+
+  
+ - *Imagen y link del prototipo de alta fidelidad final (mobile y desktop) en
+   Figma.*
+  
 
   | Tiempos           | Fechas         |
   | :---------------: | :------------: |

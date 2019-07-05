@@ -1,272 +1,589 @@
 *{
-    outline: none;
+  outline: none;
 }
 
+
 body{
-    background-image: url(http://media-s3-us-east-1.ceros.com/hype-beast/images/2018/07/13/a9a51bc0b8d626db493ab5f9a971b043/background-hero.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(http://media-s3-us-east-1.ceros.com/hype-beast/images/2018/07/13/a9a51bc0b8d626db493ab5f9a971b043/background-hero.png);
 }
 
 html, body, header {
-    
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    flex-wrap: wrap;
+  
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
 }
 
 header{
-    color:#ffffff;
-    font-family:calibri;
-    font-size: 15px;
-    height: 64px;
+  color:#ffffff;
+  font-family:calibri;
+  font-size: 15px;
+  height: 64px;
+  position: fixed;
+  z-index: 5;
 }
 
 main{
-    height: 100%;
-    display: flex;
+  height: 100%;
+  display: flex;
 }
+
+/* login---------------------------------------------------------------------------------------------- */
 
 .login {
-    display: flex;
-    flex-direction: column;
-    outline: none;
-    background-color: #504040;
-    width: 375px;
-    height: 667px;
-    color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  background-color: #504040;
+  width: 375px;
+  height: 667px;
+  color: #ffffff;
 }
 
-img {
-    width: 32%;
-    margin: 7em auto 0.5em;
+.pokePic {
+  width: 32%;
+  margin: 1em auto 1em;
+}
+.logo{
+  width: 45%;
+  margin: 5.7em auto 1.5em;
+}
+.untrapped{
+  filter: brightness(0);
 }
 
 .login-input {
-    margin: 1.5em auto;
-    display: flex;
-    flex-direction: column;
-    width: 335px;
-    height: 210px;
-    font-size: 17px;
-    line-height: 35px;
-    font-family: calibri;
+  margin: 1.5em auto;
+  display: flex;
+  flex-direction: column;
+  width: 335px;
+  height: 210px;
+  font-size: 17px;
+  line-height: 35px;
+  font-family: calibri;
 }
 
 .user{
-    border-radius:4px;
-    padding: 14px;
-    height: 35px;
-    font-size: 16px;
+  border-radius:4px;
+  padding: 14px;
+  height: 35px;
+  font-size: 16px;
 }
 
 .btn-login{
-    background-color: #2C97C1;
-    border-color: #2C97C1;
-    color: #ffffff;
-    font-weight: 100;
-    font-size: 16px;
-    height: 45px;
-    border-radius: 4px;
+  background-color: #2C97C1;
+  border-color: #2C97C1;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 16px;
+  height: 45px;
+  border-radius: 4px;
 }
 
 #message {
-    align-self: center;
+  align-self: center;
 }
 
 .register{
-    align-self: center;
+  align-self: center;
 }
 
 .forgot-password{
-    text-align: right;
-    margin: 0.4em;
-    }
-
+  text-align: right;
+  margin: 0.4em;
+  }
+/* display ---------------------------------------------------------------------------------------------*/
 nav{
-    display:flex;
-        flex-wrap: wrap;
+  margin-top: 48px;
+  display:flex;
+  flex-wrap: wrap;
 }
 
 input[type="image" i]{
-    width: 100%;
-    border-bottom: solid greenyellow;
-    border-radius: 50%;
+  width: 100%;
+  border-bottom: solid greenyellow;
+  border-radius: 50%;
 }
 
 .wp-caption:hover{
-    transform: scale(1.3);
-    transition:.5s;
+  transform: scale(1.3);
+  transition:.5s;
 }
 
 .wp-caption:hover{
-     background-color:rgb(161,249,255,0.6);
-     border-radius: 50%;
- }
+   background-color:rgb(161,249,255,0.6);
+   border-radius: 50%;
+}
 
 .wp-caption {
-    position: relative;
-    padding: 13px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    width: 26%;
-    justify-content: center;
-    }
+  position: relative;
+  padding: 0px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 26%;
+  justify-content: center;
+  }
 
 .wp-caption img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    }
+  display: block;
+  max-width: 100%;
+  height: auto;
+  }
 
 .wp-caption-text {
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    color: #A1F9FF;
-    bottom: 0;
-    padding: 0.5em 0.2em;
-    font-weight: 100;
-    font-size: 14px;
-    z-index: 5;
-    box-sizing: border-box;
-    background-color: rgba(8,9,13,.8);
-    transition: opacity .3s ease-in-out;
-    font-family: calibri;
-    border-radius: 50%;
-    }
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  color: #A1F9FF;
+  bottom: 0;
+  padding: 0.5em 0.2em;
+  font-weight: 100;
+  font-size: 14px;
+  z-index: 5;
+  box-sizing: border-box;
+  background-color: rgba(8,9,13,.8);
+  transition: opacity .3s ease-in-out;
+  font-family: calibri;
+  border-radius: 50%;
+  }
 
 .wp-caption:hover .wp-caption-text {
-    opacity: 1;
-    text-align: center;
-    }
+  opacity: 1;
+  text-align: center;
+  }
 
-.hide {
-    display: none;
+/* botones pokebola-------------------------------------------------------------------------------- */
+.contenedor1{
+  width: 70px;
+  height: 245px;
+  position:fixed;
+  right: 0px;
+  bottom:0px;
+  z-index: 6;
+}
+.boton1{
+  width: 50px;
+  height: 50px;
+  border-radius:100%;
+  background-image: url(img/pokeball.png);
+  background-size: cover;
+  right:0;
+  bottom:0;
+  position: absolute;
+  margin-right: 12px;
+  margin-bottom:16px;
+  border: solid white;
+  color:#FFF;
+  font-size:36px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s;
+  z-index: 6;
 }
 
-.contenedor{
-    width:90px;
-    height:240px;
-    position:absolute;
-    right:0px;
-    bottom:0px;
-    z-index: 1;
-  }
-  .boton1{
-    width:60px;
-    height:60px;
-    border-radius:100%;
-    background:#F44336;
-    right:0;
-    bottom:0;
-    position:absolute;
-    margin-right:16px;
-    margin-bottom:16px;
-    border:none;
-    outline:none;
-    color:#FFF;
-    font-size:36px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    transition:.3s;
-    z-index: 1;  
-  }
-  span{
-    transition:.5s;  
-  }
-  .boton1:hover span{
-    transform:rotate(360deg);
-  }
-  .boton1:active{
-    transform:scale(1.1);
-  }
-  .btn{
-    width:40px;
-    height:40px;
-    border-radius:100%;
-    border:none;
-    color:#FFF;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    font-size:28px;
-    outline:none;
-    position:absolute;
-    right:0;
-    bottom:0;
-    margin-right:26px;
-    transform:scale(0);
-  }
-  .boton2{
-    background:#2196F3;
-    margin-bottom:85px;
-    transition:0.5s;
-  }
-  .boton3{
-    background:#673AB7;
-    margin-bottom:130px;
-    transition:0.7s;
-  }
-  .boton4{
-    background:#009688;
-    margin-bottom:175px;
-    transition:0.9s;
-  }
-  .boton5{
-    background:#FF5722;
-    margin-bottom:220px;
-    transition:0.99s;
-  }
-  .animacionVer{
-    transform:scale(1);
-  }
-  
+.boton1:active{
+  transform:scale(1.1);
+}
+.btn{
+  width:40px;
+  height:40px;
+  border-radius:100%;
+  border:none;
+  color:#FFF;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  font-size:14px;
+  position:absolute;
+  right:0;
+  bottom:0;
+  margin-right:26px;
+  transform:scale(0);
+}
+.boton2{
+  background:#FF0000;
+  margin-bottom: 70px;
+  margin-right: 18px;
+  transition:0.5s;
+  border:solid #000000;
+}
+.boton3{
+  background:#FF0000;
+  margin-bottom: 114px;
+  margin-right: 18px;
+  transition:0.7s;
+  border: solid #FFFFFF;
+}
+.boton4{
+  background:#FF0000;
+  margin-bottom: 158px;
+  margin-right: 18px;
+  transition:0.9s;
+  border:solid #000000;
+}
+.boton5{
+  background:#FF0000;
+  margin-bottom: 203px;
+  margin-right: 18px;
+  transition:0.9s;
+  border: solid #FFFFFF;
+}
+.animacionVer{
+  transform:scale(1);
+}
 
+/* boton home------------------------------------------------------------------------------------------ */
+
+.home{
+  background-image: url(img/inicio.png);
+  background-size:cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border:none;
+  color:#FFF;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  position:fixed;
+  left: 0;
+  bottom:0;
+  margin-left: 12px;
+  margin-bottom: 16px;
+  z-index: 6;
+}
+.home:active{
+  transform:scale(1.1);
+}
+
+/* botones huevo ------------------------------------------------------------------------------------- */
+.contenedor2{
+  width: 70px;
+  height: 200px;
+  position: fixed;
+  right: 66px;
+  bottom:0px;
+  z-index: 7;
+}
+
+.botonHuevo{
+  width: 50px;
+  height: 50px;
+  border-radius:100%;
+  right:0;
+  bottom:0;
+  background-image: url(img/huevo.png);
+  background-size: cover;
+  position:absolute;
+  margin-right: 6px;
+  margin-bottom:16px;
+  border: solid black;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s;
+  z-index: 7;
+}
+
+.botonHuevo:active{
+  transform:scale(1.1);
+}
+.boton2km{
+  background:rgb(21, 180, 87);
+  margin-bottom: 70px;
+  margin-right: 13px;
+  transition:0.5s;
+  background-image: url(img/2km.png);
+  background-size: cover;
+}
+.boton5km{
+  background:rgb(243, 175, 27);
+  margin-bottom: 114px;
+  margin-right: 13px;
+  transition:0.7s;
+  background-image: url(img/5km.png);
+  background-size: cover;
+}
+.boton10km{
+  background:#a025be;
+  margin-bottom: 158px;
+  margin-right: 13px;
+  transition:0.9s;
+  background-image: url(img/10km.png);
+  background-size: cover;
+}
+
+/* botones tipo ------------------------------------------------------------------------------------- */
+.contenedor3{
+    width: 160px;
+    height: 356px;
+    position:fixed;
+    left: 4.5em;
+    bottom:0px;
+    z-index: 6;
+}
+.contenedor4{
+  width: 160px;
+  height: 356px;
+  position:fixed;
+  left: 10em;
+  bottom:0px;
+  z-index: 6;
+}
+.Types{
+  width: 86px;
+  height: 29px;
+  border-radius: 20%;
+  left: 3px;
+  bottom: 7px;
+  position:absolute;
+  margin-right: 5px;
+  margin-bottom: 18px;
+  color: #000000;
+  font-size: 14px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s;
+  z-index: 6;
+}
+
+.Types:active{
+  transform:scale(1.1);
+}
+
+.Bug{
+  margin-bottom: 60px;
+  margin-right: 0px;
+  transition:0.5s;
+  background-image: url(img/Bug.png);
+  background-size: cover;
+}
+.Dark{
+  margin-bottom: 105px;
+  margin-right: 0px;
+  transition:0.7s;
+  background-image: url(img/Dark.png);
+  background-size: cover;
+}
+.Dragon{
+  margin-bottom: 150px;
+  margin-right: 0px;
+  transition:0.9s;
+  background-image: url(img/Dragon.png);
+  background-size: cover;
+}
+.Electric{
+  margin-bottom: 195px;
+  margin-right: 0px;
+  transition:1.1s;
+  background-image: url(img/Electric.png);
+  background-size: cover;
+}
+.Fairy{
+  margin-bottom: 240px;
+  transition:1.3s;
+  margin-right: 0px;
+  background-image: url(img/Fairy.png);
+  background-size: cover;
+}
+.Fighting{
+  margin-bottom: 285px;
+  margin-right: 0px;
+  transition:1.5s;
+  background-image: url(img/Fighting.png);
+  background-size: cover;
+  }
+.Fire{
+  margin-bottom: 60px;
+  margin-right: 45px;
+  transition:0.5s;
+  background-image: url(img/Fire.png);
+  background-size: cover;
+}
+.Flying{
+  margin-bottom: 105px;
+  margin-right: 45px;
+  transition:0.7s;
+  background-image: url(img/Flying.png);
+  background-size: cover;
+  }
+.Ghost{
+  margin-bottom: 150px;
+  margin-right: 45px;
+  transition:0.9s;
+  background-image: url(img/Ghost.png);
+  background-size: cover;
+  }
+.Grass{
+  margin-bottom: 195px;
+  margin-right: 45px;
+  transition:1.1s;
+  background-image: url(img/Grass.png);
+  background-size: cover;
+  }
+.Ground{
+  margin-bottom: 240px;
+  margin-right: 45px;
+  transition:1.3s;
+  background-image: url(img/Ground.png);
+  background-size: cover;
+  }
+.Ice{
+  margin-bottom: 285px;
+  margin-right: 45px;
+  transition:1.5s;
+  background-image: url(img/Ice.png);
+  background-size: cover;
+  }
+.Normal{
+  margin-bottom: 60px;
+  margin-right: 90px;
+  transition:0.5s;
+  background-image: url(img/Normal.png);
+  background-size: cover;
+  }
+.Poison{
+  margin-bottom: 105px;
+  margin-right: 90px;
+  transition:0.7s;
+  background-image: url(img/Poison.png);
+  background-size: cover;
+  }
+.Psychic{
+  margin-bottom: 150px;
+  margin-right: 90px;
+  transition:0.9s;
+  background-image: url(img/Psychic.png);
+  background-size: cover;
+  }
+.Rock{
+  margin-bottom: 195px;
+  margin-right: 90px;
+  transition:1.1s;
+  background-image: url(img/Rock.png);
+  background-size: cover;
+  }
+.Steel{
+  margin-bottom: 240px;
+  margin-right: 90px;
+  transition:1.3s;
+  background-image: url(img/Steel.png);
+  background-size: cover;
+  }
+.Water{
+  margin-bottom: 285px;
+  margin-right: 90px;
+  transition:1.5s;
+  background-image: url(img/Water.png);
+  background-size: cover;
+  }
+ 
+
+/* display ---------------------------------------------------------------*/
+body > nav {
+  height: 100%;
+  width: 100%;  
+  color: #FFF;
+}
+
+.card{
+  display: grid;
+  height: 82vh;
+  margin: 5vh;
+  width: 50vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+}
+.cardImg {
+  display:grid;
+  width:40vw;
+  margin: 1em auto 0em;
+  border-bottom: solid greenyellow;
+  border-right: solid greenyellow;
+  border-width: 0.5em;
+  border-radius: 50%;
+  padding: 2em;
+  background-color: white;
+}
+.characteristics{
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 284px;
+}
+
+.pokedex{display: flex;justify-content: space-evenly;width: 50vh;}
+
+/* media query----------------------------------------------------------------------------- */
 @media only screen and (min-width: 768px){
 
-    html,body{
-        
-        background-size: cover;
-        background-repeat: repeat-y;
-        height: 100%;
-    }
+  html,body{
+      
+      background-size: cover;
+      background-repeat: repeat-y;
+      height: 100%;
+  }
 
-    header{
-        font-size:25px;
-        height: 90px;
-    }
+  header{
+      font-size:25px;
+      height: 77px;
+      align-content: center;
+  }
 
-    input[type="image" i] {
-    width: 75%;
-    }
+  input[type="image" i] {
+  width: 75%;
+  }
 
-    .login {
-    width: 536px;
-    height: 501px;
-    justify-content: center;
-    align-self: center;
-    }
+  .login {
+  width: 536px;
+  height: 501px;
+  justify-content: center;
+  align-self: center;
+  }
 
-    img {
-        width: 25%;
-    }
+  .pokePic, .logo {
+      width: 25%;
+  }
 
-    .login-input {
-        margin: 0.5em auto;
-        height: 214px;
-        inline-size: 367px;
-    }
+  .login-input {
+      margin: 0.5em auto;
+      height: 214px;
+      inline-size: 367px;
+  }
 
-    .btn-login{
-        inline-size: 157px;
-        align-self: center;
-    }
+  .btn-login{
+      inline-size: 157px;
+      align-self: center;
+  }
 
-    .wp-caption {
-        width: 15%;
-        padding: 29px;
-    }
+  .wp-caption {
+      width: 15%;
+      padding: 29px;
+  }
 
-    .wp-caption-text {
-        font-size: 18px;
-        padding: 0em;
-    }
-    }
+  .wp-caption-text {
+      font-size: 18px;
+      padding: 0em;
+  }
+
+  .cardImg{
+    width: 43%;
+    margin-top: 3em;
+  }
+
+  .deb{
+    margin-left: 130px;
+    width: 85px;
+    left: 22em;
+  }
+  .typ{
+    margin-left: 80px;
+    width: 85px;
+    left: 13em;
+  }
+  .home{
+    position: fixed;
+  }
+  }
+  .hide{
+    display: none;
+  }
