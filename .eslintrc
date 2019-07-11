@@ -30,6 +30,7 @@
         "no-array-constructor": 1
     },
     "globals": {
+        "POKEMON":true,
         "example": false
     }
 }

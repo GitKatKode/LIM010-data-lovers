@@ -1,13 +1,14 @@
+
 const classContenedor1 = document.getElementById('contenedor1');
 const classContenedor2 = document.getElementById('contenedor2');
 const classContenedor3 = document.getElementById('contenedor3');
-const classContenedor4 = document.getElementById('contenedor4');
+const classContenedor4 = document.getElementById('contenedor4'); 
 // cambiar nombre botones ordenado
-const btn1 = document.getElementById('btn1');
-const btn2 = document.getElementById('btn2');
-const btn3 = document.getElementById('btn3');
-const btn4 = document.getElementById('btn4');
-const btn5 = document.getElementById('btn5');
+const btnPokeball = document.getElementById('btn-pokeball');
+const btnZa = document.getElementById('btnza');
+const btnAz = document.getElementById('btnaz');
+const btnFup = document.getElementById('btnfup');
+const btnFdown = document.getElementById('btnfdown');
 
 const btnh = document.getElementById('btnh');
 const btn2km = document.getElementById('btn2km');
@@ -57,17 +58,17 @@ const waterw = document.getElementById('waterw');
 
 const mouseOver1 = () => {
   classContenedor1.classList.add('animacionVer');
-  btn2.classList.add('animacionVer');
-  btn3.classList.add('animacionVer');
-  btn4.classList.add('animacionVer');
-  btn5.classList.add('animacionVer');
+  btnZa.classList.add('animacionVer');
+  btnAz.classList.add('animacionVer');
+  btnFup.classList.add('animacionVer');
+  btnFdown.classList.add('animacionVer');
 };
 const mouseOut1 = () => {
   classContenedor1.classList.remove('animacionVer');
-  btn2.classList.remove('animacionVer');
-  btn3.classList.remove('animacionVer');
-  btn4.classList.remove('animacionVer');
-  btn5.classList.remove('animacionVer');
+  btnZa.classList.remove('animacionVer');
+  btnAz.classList.remove('animacionVer');
+  btnFup.classList.remove('animacionVer');
+  btnFdown.classList.remove('animacionVer');
 };
 const mouseOver2 = () => {
   classContenedor2.classList.add('animacionVer');
@@ -168,11 +169,11 @@ const mouseOut4 = () => {
   waterw.classList.remove('animacionVer');
 };
 
-btn1.addEventListener('mouseover', mouseOver1);
-btn2.addEventListener('mouseover', mouseOver1);
-btn3.addEventListener('mouseover', mouseOver1);
-btn4.addEventListener('mouseover', mouseOver1);
-btn5.addEventListener('mouseover', mouseOver1);
+btnPokeball.addEventListener('mouseover', mouseOver1);
+btnZa.addEventListener('mouseover', mouseOver1);
+btnAz.addEventListener('mouseover', mouseOver1);
+btnFup.addEventListener('mouseover', mouseOver1);
+btnFdown.addEventListener('mouseover', mouseOver1);
 classContenedor1.addEventListener('mouseout', mouseOut1);
 
 btnh.addEventListener('mouseover', mouseOver2);

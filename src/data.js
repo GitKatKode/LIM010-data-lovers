@@ -1,32 +1,3 @@
-const displayData = (dataToPrint) => {
-  let noPokemons = [];
-  let thePokemons = [];
-  dataToPrint.forEach((poke)=>{
-    if (poke.multipliers === null) {
-      noPokemons += poke;
-      return noPokemons;
-    } else {
-      thePokemons += poke;
-      return thePokemons;
-    };
-  });
-  const parentNav = document.querySelectorAll('nav')[0];
-  const getId = (event) => {
-    const idPokemon = event.target.id;
-    showCard(idPokemon);
-  };
-  parentNav.addEventListener('click', getId);
-  header.innerHTML = `
-    <h2>Total atrapados: ${thePokemons.length / 15} &nbsp; &nbsp; Por atrapar: ${noPokemons.length / 15}</h2>`;
-  classContenedor1.classList.remove('hide'); 
-  classContenedor2.classList.remove('hide'); 
-  classContenedor3.classList.remove('hide'); 
-  classContenedor4.classList.remove('hide'); 
-  home.classList.remove('hide'); 
-  showDisplay(dataToPrint);
-  return dataToPrint;
-}; 
-
 const sortPoke = (data, sortOrder) => {
   const arrSortName = data.slice().sort((aa, bb) => {
     if (aa.name > bb.name) {
@@ -34,15 +5,13 @@ const sortPoke = (data, sortOrder) => {
     } if (aa.name < bb.name) {
       return -1;
     }
-    return 0;
   });
-  if (sortOrder === 'nameup') {
+  if (sortOrder === 'nameup') {   
     return arrSortName;
   }
   if (sortOrder === 'namedown') {
     return arrSortName.reverse();
   }
-  return 0;
 };
  
 const sortSpawns = (data, sortOrder) => {
@@ -52,7 +21,6 @@ const sortSpawns = (data, sortOrder) => {
     } if (aa.avg_spawns < bb.avg_spawns) {
       return -1;
     }
-    return 0;
   });
   if (sortOrder === 'avgup') {
     return arrSortSpawns;
@@ -60,7 +28,6 @@ const sortSpawns = (data, sortOrder) => {
   if (sortOrder === 'avgdown') {
     return arrSortSpawns.reverse();
   }
-  return 0;
 };
 
 const filterEgg = (data, kms) => {
@@ -77,9 +44,9 @@ const filterEgg = (data, kms) => {
   return egg;
 };
 
-const filterByTypes = (condition) => {
+const filterByTypes = (condition, filterArray) => {
   filteredArray = [];
-  pokemons.forEach(poke => {
+  filterArray.forEach(poke => {
     for (let i = 0; i < poke.type.length; i++) {
       if (poke.type[i] === condition) {
         filteredArray.push(poke); 
@@ -89,9 +56,9 @@ const filterByTypes = (condition) => {
   return filteredArray;
 };
 
-const filterByWeaknesses = (condition) =>{
+const filterByWeaknesses = (condition, filterArray) =>{
   filteredArray = [];
-  pokemons.forEach(poke => {
+  filterArray.forEach(poke => {
     for (let i = 0; i < poke.weaknesses.length; i++) {
       if (poke.weaknesses[i] === condition) {
         filteredArray.push(poke); 
@@ -103,7 +70,6 @@ const filterByWeaknesses = (condition) =>{
 
 window.filterByTypes = filterByTypes;
 window.filterByWeaknesses = filterByWeaknesses;
-window.displayData = displayData;
 window.sortPoke = sortPoke;
 window.sortSpawns = sortSpawns;
 window.filterEgg = filterEgg;
