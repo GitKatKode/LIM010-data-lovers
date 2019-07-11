@@ -13,6 +13,7 @@ const btnh = document.getElementById('btnh');
 const btn2km = document.getElementById('btn2km');
 const btn5km = document.getElementById('btn5km');
 const btn10km = document.getElementById('btn10km');
+const notInEggs = document.getElementById('not-in-eggs');
 
 const types = document.getElementById('types');
 const bug = document.getElementById('bug');
@@ -73,12 +74,14 @@ const mouseOver2 = () => {
   btn2km.classList.add('animacionVer');
   btn5km.classList.add('animacionVer');
   btn10km.classList.add('animacionVer');
+  notInEggs.classList.add('animacionVer');
 };
 const mouseOut2 = () => {
   classContenedor2.classList.remove('animacionVer');
   btn2km.classList.remove('animacionVer');
   btn5km.classList.remove('animacionVer');
   btn10km.classList.remove('animacionVer');
+  notInEggs.classList.remove('animacionVer');
 };
 const mouseOver3 = () => {
   classContenedor3.classList.add('animacionVer');
@@ -176,6 +179,7 @@ btnh.addEventListener('mouseover', mouseOver2);
 btn2km.addEventListener('mouseover', mouseOver2);
 btn5km.addEventListener('mouseover', mouseOver2);
 btn10km.addEventListener('mouseover', mouseOver2);
+notInEggs.addEventListener('mouseover', mouseOver2);
 classContenedor2.addEventListener('mouseout', mouseOut2);
 
 types.addEventListener('mouseover', mouseOver3);

@@ -6,7 +6,4 @@ describe(displayData, () => {
   it('debería ser una función', () => {
     assert.equal(typeof displayData, 'function');
   });
-  it('debería retornar "example"', () => {
-    assert.equal(example(), 'example');
-  });
 });
