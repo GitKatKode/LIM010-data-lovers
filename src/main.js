@@ -17,7 +17,7 @@ const home = document.getElementById('home');
 const loginAccess = () => {
   const password = document.getElementById('password').value;
   const email = document.getElementById('email').value;
-  if (email === '' && password === '') {
+  if (email === 'LABORATORIA' && password === 'LABORATORIA') {
     formLogin.classList.add('hide');
     loginInput.classList.add('hide');
     document.body.style.backgroundImage = 'url("img/fondop3.jpg")';
