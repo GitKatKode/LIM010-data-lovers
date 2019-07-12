@@ -321,7 +321,7 @@ input[type="image" i]{
   background-image: url(img/10km.png);
   background-size: cover;
 }
-.notInEggs{
+.not-in-eggs{
   background-image: url(img/huevo.png);
   background-size: cover;
   position:absolute;
